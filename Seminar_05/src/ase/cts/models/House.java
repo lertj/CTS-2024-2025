@@ -8,7 +8,7 @@ public class House extends AHouse {
     boolean hasRadio;
     boolean hasSink;
 
-    public House(String location, boolean hasFloor, boolean hasWalls, boolean hasRoof, String tvBrand, boolean hasRadio, boolean hasSink) {
+    House(String location, boolean hasFloor, boolean hasWalls, boolean hasRoof, String tvBrand, boolean hasRadio, boolean hasSink) {
         this.location = location;
         this.hasFloor = hasFloor;
         this.hasWalls = hasWalls;
@@ -17,7 +17,7 @@ public class House extends AHouse {
         this.hasSink = hasSink;
     }
 
-    public House(String location, boolean hasFloor, boolean hasWalls, boolean hasRoof) {
+    House(String location, boolean hasFloor, boolean hasWalls, boolean hasRoof) {
         this.location = location;
         this.hasFloor = hasFloor;
         this.hasWalls = hasWalls;
@@ -52,7 +52,7 @@ public class House extends AHouse {
         this.hasSink = hasSink;
     }
 
-    public void addSinkAndTV(){
+    void addSinkAndTV(){
         this.hasSink = true;
         this.tvBrand = "";
     }
